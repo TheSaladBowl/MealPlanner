@@ -34,4 +34,4 @@ app.get('/meals/month/:month', (req, res) => {
 });
 
 
-app.listen(8000, () => console.log("Serving on 8000..."));
+app.listen(Number(process.env.PORT) || 8000, () => console.log("Serving on 8000..."));
